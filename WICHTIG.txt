@@ -1,0 +1,18 @@
+Java-Fix:
+
+Voraussetzung: 
+Die originale Arduino-Software muss auf dem Rechner installiert sein,
+darin ist die funktionierende Java-Version 1.8.0_191
+
+In der Datei:
+C:\Users\CG\.platformio\packages\tool-stm32duino\maple_upload.bat
+
+die Anweisung:
+java -jar maple_loader.jar %1 %2 %3 %4 %5 %6 %7 %8 %9
+ersetzen mit:
+"C:\Program Files (x86)\Arduino\java\bin\java.exe" -jar maple_loader.jar %1 %2 %3 %4 %5 %6 %7 %8 %9
+
+
+Zum Rücksetzen des Bootloaders:
+.\ST-LINK_CLI.exe -c SWD -P ..\..\reset.bin 0x8000000 -Rst -Run -NoPrompt
+.\ST-LINK_CLI.exe -c SWD -P ..\..\blink.bin 0x8002000 -Rst -Run -NoPrompt
