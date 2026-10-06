@@ -1,4 +1,9 @@
-Java-Fix:
+Vorbereitung:
+
+
+
+
+Java-Fix für Maple-Modus:
 
 Voraussetzung: 
 Die originale Arduino-Software muss auf dem Rechner installiert sein,

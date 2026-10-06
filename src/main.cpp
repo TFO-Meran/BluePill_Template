@@ -14,7 +14,7 @@
 
 #define LED_PIN PC13
 
-#define CYCLETIME 200
+#define CYCLETIME 1000
 
 void setup()
 {
